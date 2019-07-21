@@ -12,7 +12,7 @@ A/B partition = 算係新嘢嚟，用嚟實現seamless system update，下面會
 
 Encryption = 唔係咩新嘢，Android 5.0 已經support full system encryption。
 
-Bootleggers = Rom一個，「Trying to make you feel like 家」，注意我提供嘅Bootleggers係Force Encryption Version （已存在喺/data partition嘅舊Data會被格式化☺）。
+Bootleggers = Rom一個，Slogan係「Trying to make you feel like 家」。注意我提供嘅Bootleggers係Force Encryption Version （⚠已存在喺/data partition嘅舊Data會被格式化，/data分區強制加密⚠）。
 
 Rom Packages：https://drive.google.com/file/d/1yIr3PBBDCSGeeQqsQ6GqJ_e4KNExOwkB/view?usp=sharing
 

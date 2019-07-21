@@ -1,6 +1,6 @@
 # OnePlus6T Custom Rom Flashing Guide
 
-<div style="text-align:center"><img src="./images/screen_capture.png" width="350px"></center></div>
+<p align="center"><img src="./images/screen_capture.png" width="350px"></p>
 
 ## 前言
 

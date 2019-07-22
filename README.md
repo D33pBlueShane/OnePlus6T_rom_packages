@@ -1,6 +1,7 @@
 # OnePlus6T Custom Rom Flashing Guide
 
 <p align="center"><img src="./images/screen_capture.png" width="350px"></p>
+   
 ## 前言
 
 有幾個常見Terms想記低先，事關自己記性真心差，經常轉個頭就唔記得嘢。
@@ -75,16 +76,15 @@ Bootleggers = Rom一個，Slogan係「Trying to make you feel like 家」。注�
 解壓咗`9.0.12-OnePlus6TOxygen_34_OTA_019_all_1901231347_fb09dd2d4-FASTBOOT.zip`之後>`Others_flashall` > `flash-all-partitions.bat`
 
 Run呢個batch scrtip，之後都係跟住prompt instruction，同埋等就ok。你會見到佢係將A/B partition都flash翻stock rom落去，以及stock recovery。
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-
-
-   
-
-   
-
-   
-
-References:
+## References:
 
 https://forum.xda-developers.com/oneplus-6/how-to/guide-noobs-guide-to-b-partitions-op6-t3816123
 

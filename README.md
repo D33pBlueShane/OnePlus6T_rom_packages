@@ -1,6 +1,8 @@
 # OnePlus6T Custom Rom Flashing Guide
 
 <p align="center"><img src="./images/screen_capture.png" width="350px"></p>
+<br>
+
 ## 前言
 
 有幾個常見Terms想記低先，事關自己記性真心差，經常轉個頭就唔記得嘢。
@@ -109,8 +111,7 @@ Flashing Instructions:
 
 
 詳細點做，可以睇教學片：
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q1QNuSYNHI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![https://www.youtube.com/embed/q1QNuSYNHI8](https://www.youtube.com/embed/q1QNuSYNHI8)
 
 <br><br><br><br>
 

@@ -71,9 +71,15 @@ OTA更新實際上係你reboot嘅時侯發生（Download完OTA更新檔，System
 
 ## 究竟乜嘢係A/B partition?
 
-A/B parition，字面上睇都知係講緊有兩 set partitions，A同B。
+![](./images/ab-partition-diagram.png)
 
+A/B parition，字面上睇都知係講緊有兩 set partitions，A同B。每次只會有一個partition係active。假設依家係用緊A partition，咁OTA Update就會write落B partition到，亦都因為咁樣呢個process唔會影響到目前用緊既partition，所以亦都叫seamless update。Update完成之後只需要reboot，咁recovery就會set active partition由A 變做 B，然後部機就boot入partition B嘅OS。換言之依家B partition會係最update嘅OS，而A partiton會係未apply OTA update嘅OS。呢個概念同dual boot係有啲似，即係Nexus 5 年代嘅機玩緊嘅multirom。
 
+一旦OTA Update出問題，冇有怕，Recovery識得fallback番去之前嘅A partition。雖然A partiton唔係最新嘅狀態，但至少咁樣可以ensure到部機冇咁易因為OTA Update而變磚。
+
+而要留意既係data partition會係shared with both A同B parition，即係2個OS都係共用一堆APPs，User data（圖片，檔案，etc）。
+
+更多嘅講解可以睇翻xda各路高手嘅文章。
 
 
 
@@ -81,13 +87,32 @@ A/B parition，字面上睇都知係講緊有兩 set partitions，A同B。
 
 下載完上面嗰堆Rom packages之後，再裝埋adb就可以開波。
 
-要提一提嘅係One Plus 6T刷機（或者話A/B partition scheme嘅刷機）都一定要有stock rom，
+要提一提嘅係One Plus 6T刷機（或者話A/B partition scheme嘅刷機）都最好要有stock rom，因為呢一代嘅機刷機觀念唔太一樣：依家係好似砌LEGO咁，要有一個base，然後其他嘢慢慢疊呀疊咁砌上去；而我哋嘅base就係stock rom (latest version OOS)，用佢做底可以ensure firmware齊哂冇漏。另一個原因係因為今次刷嘅ROM係bootleggers，official guideline寫明要刷OOS先咁就最好跟一跟（不過好似有人試過唔刷都OKAY?）。亦有啲ROM可能會指明唔係刷OOS先，而係AOSP都唔出奇，反正照做就OK。
+
+Flashing Instructions:
+
+```bash
+1. Download the ROM
+2. Download GAPPS
+3. Download Twrp
+4. Go to recovery and TAKE A NANDROID BACKUP
+5. Wipe Data and Cache
+6. Flash OOS + TWRP
+7. Reboot to twrp
+8. Wipe data, cache(system optional)
+6. Flash ROM + twrp
+7. reboot to twrp. This is compulsory
+8. Now flash additional addons like gapps and magisk.
+9. Reboot and profit
+```
 
 
 
+詳細點做，可以睇教學片：
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q1QNuSYNHI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+<br><br><br><br>
 
 ## Oneplus 6T 變磚點算 ? How to Unbrick?
 
